@@ -39,3 +39,8 @@ signed main() {
 		tc();
 	}	
 }
+
+/*
+cara terbaik adalah dengan memindahkan elemen yang bukan merupakan anggota dari 'longest-increasing subsequence' yang belum terurut.
+sehingga banyak elemen yang perlu dipindahkan adalah n - lis(n), dengan lis(x) merupakan longest-increasing subsequence dari elemen pertama hingga elemen ke 'x'.
+*/
