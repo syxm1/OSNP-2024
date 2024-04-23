@@ -30,6 +30,6 @@ signed main() {
 }
 
 /*
-dari observasi, diperoleh bahwa suatu bilangan basis-n 'x' merupakan amusing digit apabila 'x' habis membagi n-1;
-sehingga banyak 'amusing-digit' pada sistem bilangan basis-n adalah banyak bilangan yang habis membagi x - 1 (meng-exclude '1').
+dari observasi, diperoleh bahwa suatu bilangan basis-n 'x' merupakan amusing digit apabila 'x' habis membagi 'n-1';
+sehingga banyak 'amusing-digit' pada sistem bilangan basis-n adalah (banyak bilangan yang habis membagi 'n-1') - 1 (meng-exclude digit '1').
 */
