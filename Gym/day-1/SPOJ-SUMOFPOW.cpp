@@ -1,30 +1,27 @@
-#include<bits/stdc++.h>
+#include<cstdio>
 using namespace std;
 
 using ll = long long;
 
 void test_case() {
 	ll n, x, y;
-	cin >> x >> y >> n;
+	scanf("%lld%lld%lld", &x, &y, &n);
 	
 	ll ans[n+1];
 
-	ans[0] = 2;
+	ans[0] = 2LL;
 	ans[1] = x;
 
 	for (int i = 2; i <= n; i++) {
 		ans[i] = ans[i-1] * x - ans[i-2] * y;
 	}
 
-	cout << ans[n] << '\n';
+	printf("%lld\n", ans[n]);
 }
 
 signed main() {
-	ios_base::sync_with_stdio(false);
-	cin.tie(0);
-
 	int tc;
-	cin >> tc;
+	scanf("%d", &tc);
 
 	while(tc--) {
 		test_case();
