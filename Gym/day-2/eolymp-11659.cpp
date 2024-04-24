@@ -1,7 +1,16 @@
 // Get 2024
 
 /*
+definisikan:
+- dp[i][j] sebagai banyak cara menyusun substring dengan s[i] menjadi digit ke 'j' dari "2024"
+- suff[i][j] sebagai suffix-sum dari dp[k][j], i <= k < n;
 
+sehingga transisi dp adalah:
+- dp[i][j] = suff[i+1][j+1], jika s[i] bisa ditempatkan di posisi 'j' sebagai penyusun '2024'.
+		   = 0, jika sebaliknya.
+- suff[i][j] = suff[i+1][j] + dp[i][j].
+
+sehingga jawaban akhir adalah suff[0][0].
 */
 
 #include<bits/stdc++.h>
