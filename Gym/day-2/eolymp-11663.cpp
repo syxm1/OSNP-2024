@@ -1,5 +1,9 @@
 // Fun Fibonacci
 
+/*
+Implementasi sesuai dengan yang diminta soal dengan pre-compute pada 'F' dan memoisasi nila 'f'.
+*/
+
 #include<cstdio>
 using namespace std;
 
