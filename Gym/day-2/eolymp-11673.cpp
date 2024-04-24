@@ -1,5 +1,15 @@
 // Maximum Palindrome
 
+/*
+greedy : 
+prioritaskan penggunan 'k' pada:
+1. menyamakan pasangan index 'i' dan 'n - i - 1' jika s[i] != s[n - i - 1], karena jika masih terdapat pasangan yang 
+   tidak sama, maka tidak terbentuk string palindrome.
+2. gunakan 'k' yang tersisa untuk mengubah elemen dari paling depan apabila s[i] != 'z', karena huruf dengan leksikografi
+   terbesar adalah 'z'. Apabila sebelumnya pernah mengubah s[i] atau s[n-i-1], maka cukup mengurangkan 'k' dengan 1. jika
+   sebaliknya, maka kurangkan 'k' dengan 2.
+*/
+
 #include<bits/stdc++.h>
 using namespace std;
 
