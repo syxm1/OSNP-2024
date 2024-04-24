@@ -1,5 +1,17 @@
 // Create an Array
 
+/*
+observasi : 
+untuk mengubah b[l], ..., b[r], dengan a[l] == a[r] dan a[i] != a[l] untuk l+1 <= i <= r-1:
+	- diperlukan 1 kali operasi jika a[l] merupakan yang paling minimum pada range (l,r)
+ 	- diperlukan 2 kali operasi jika a[i] bukan merupakan yang paling minimum pada range (l, r)
+
+sehingga, untuk setiap elemen 'x' pada array 'a', cukup cek apakah diantara tiap2 kemunculan 'x', 
+'x' merupakan yang paling minimum.
+
+minimum range static query dapat diselesaikan dengan sparse table.
+*/
+
 #include<bits/stdc++.h>
 using namespace std;
 
