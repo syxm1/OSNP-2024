@@ -1,16 +1,16 @@
 // Fun Fibonacci
 
-#include<bits/stdc++.h>
+#include<cstdio>
 using namespace std;
 
-using ll = long long;
-
 const int N = 505;
+
+using ll = long long;
 
 int x, y, m;
 ll F[N], f[N][N];
 
-ll solve(int x, int y) {
+int solve(int x, int y) {
 	if (x <= 0 || y <= 0) return 0;
 	else if (f[x][y] != -1) return f[x][y]; 
 	else if (x <= y) return f[x][y] = (solve(x - 2, y - 1) + solve(x - 1, y - 2) + F[x]) % m;
@@ -18,10 +18,7 @@ ll solve(int x, int y) {
 }
 
 signed main() {
-	ios_base::sync_with_stdio(false);
-	cin.tie(0);
-
-	cin >> x >> y >> m;
+	scanf("%d%d%d", &x, &y, &m);
 	
 	F[0] = 2;
 	F[1] = 3;
@@ -36,5 +33,6 @@ signed main() {
 		}
 	}
 
-	cout << solve(x, y) << '\n';
+	int ans = solve(x, y);
+	printf("%d\n", ans);
 }
