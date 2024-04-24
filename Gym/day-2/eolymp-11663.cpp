@@ -1,7 +1,8 @@
 // Fun Fibonacci
 
 /*
-Implementasi sesuai dengan yang diminta soal dengan pre-compute pada 'F' dan memoisasi nila 'f'.
+implementasi sesuai dengan yang diminta soal dengan pre-compute pada 'F' dan memoisasi nila 'f'.
+lebih efektif jika menggunakan rekursi karena akan ada banyak f(x,y) yang tidak dikunjungi.
 */
 
 #include<cstdio>
