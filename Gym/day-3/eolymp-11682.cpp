@@ -1,4 +1,7 @@
 // Special Deal
+/*
+greedy: ambil mulai dari 3 elemen terbesar dst.
+*/
 #include<cstdio>
 #include<algorithm>
 
