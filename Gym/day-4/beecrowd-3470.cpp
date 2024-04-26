@@ -75,7 +75,7 @@ int a_star(pad v) {
 
     pq.push({0, dist(v), oi, oj, v});
 
-    while(!pq.empty()) {
+    while (!pq.empty()) {
         auto [g, h, i, j, p] = pq.top();
         pq.pop();
 
