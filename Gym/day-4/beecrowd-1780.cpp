@@ -1,5 +1,11 @@
 // Robots Formation
 
+/*
+coba semua kemungkinan banyak baris yang mungkin.
+jika baris ganjil, maka harus terdapat setidaknya sejumlah banyak 'nilai input yang ganjil' kolom.
+jika baris genap, maka tidak boleh ada 'nilai input' yang ganjil.
+*/
+
 #include<bits/stdc++.h>
 using namespace std;
 
