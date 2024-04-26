@@ -1,5 +1,9 @@
 // Up there the piano
 
+/*
+cukup simulasi sesuai yang diminta soal.
+*/
+
 #include<bits/stdc++.h>
 using namespace std;
 
