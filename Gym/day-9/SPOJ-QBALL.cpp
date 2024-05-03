@@ -9,8 +9,9 @@ using namespace std;
 
 #define int long long
 
-int n, q, que, i, k, sum;
-map<int, int> cnt;
+const int N = 1e5+5;
+
+int n, q, que, i, k, sum, cnt[N];
 vector<int> a;
 
 int f(int x) {
@@ -29,7 +30,7 @@ signed main() {
         cnt[a[i]]++;
     }
 
-    for (auto [p, q] : cnt) {
+    for (auto q : cnt) {
         sum += f(q);
     }
 
